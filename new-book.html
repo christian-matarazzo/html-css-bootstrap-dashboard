@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
-      <!-- navbar mobile -->
+<body>
+
+    <!-- navbar mobile -->
     <nav class="navbar navbar-dark bg-dark d-lg-none">
         <div class="container-fluid">
 
@@ -71,8 +73,7 @@
 
 
 
-
-    <!-- navbar desktop -->
+        <!-- navbar desktop -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom d-none d-lg-flex ">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -102,14 +103,68 @@
         </div>
     </nav>
 
+        <!-- form start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="mb-4">Nuovo libro</h1>
+                
+                <form>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Nome Autore</label>
+                            <input type="text" class="form-control" placeholder="Inserisci il nome">
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Cognome Autore</label>
+                            <input type="text" class="form-control" placeholder="Inserisci il cognome">
+                        </div>
+                    </div>
 
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label for="title" class="form-label">Titolo</label>
+                            <input type="text" class="form-control" placeholder="Inserisci il titolo del libro">
+                            <div class="form-text">Titolo versione italiana</div>
+                        </div>
+                    </div>
 
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label class="form-label">Genere</label>
+                            <select class="form-select">
+                                <option selected>Scegli il Genere</option>
+                                <option value="1">Romanzo</option>
+                                <option value="2">Saggio</option>
+                                <option value="3">Thriller</option>
+                            </select>
+                        </div>
+                    </div>
 
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Anno di Pubblicazione</label>
+                            <input type="number" class="form-control" placeholder="Inserisci anno di pubblicazione">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">ISBN#</label>
+                            <input type="text" class="form-control" placeholder="Inserisci codice ISBN">
+                        </div>
+                    </div>
 
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <label class="form-label">Note</label>
+                            <textarea class="form-control" rows="3">Inserisci eventuali note sul libro</textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
