@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+      <!-- navbar mobile -->
+    <nav class="navbar navbar-dark bg-dark d-lg-none">
+        <div class="container-fluid">
+
+            <!-- modify for duck logo -->
+            <a class="navbar-brand" href="index.html"><img src="./img/duck.png" alt="duck" style="height: 60px; width: auto;">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu'</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <!-- modify for offcanvas text color -->
+                <div class="offcanvas-body ">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+                        <li class="nav-item">
+                            <a class="nav-link active text-black" aria-current="page" href="#">Catalogo libri</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-black" href="#">Anagrafica</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-black" href="#">Storico prestiti</a>
+                        </li>
+                         <li class="nav-item ">
+                            <a class="nav-link text-black" href="#">Help</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- navbar desktop -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom d-none d-lg-flex ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/duck.png" alt="duck" style="height: 60px; width: auto;">
+            </a>
+
+            <ul class="navbar-nav me-auto mb-0 d-flex flex-row">
+                <li class="nav-item mx-2">
+                    <a class="nav-link active text-white" href="#">Catalogo Libri</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-secondary" href="#">Anagrafica Utenti</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-secondary" href="#">Storico Prestiti</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-secondary" href="#">Help</a>
+                </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+                <input class="form-control" type="search" placeholder="Cerca..." aria-label="Search">
+            </form>
+            <button type="button" class="btn btn-outline-light m-3">Cerca</button>
+
+        </div>
+    </nav>
+
+
+
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
